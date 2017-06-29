@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title -->
+	<title>Links &mdash; Home</title>
+
+	<!-- Stylesheet -->
+	<link href="reset.css" type="text/css" rel="stylesheet" />
+	<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Meta -->
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name='theme-color' content='#1d1d1d' />
+	<meta name="description" content="{{DESCRIPTION}}">
+	<meta name="keywords" content="{{TAGS}}">
+	<meta name="author" content="{{AUTHOR}}">
+
+	<!-- Icon -->
+	<link rel="icon" sizes="512x512" href="icon.png">
+</head>
+<body>
+
+	<header>
+
+		<canvas id="zodiac" width="1354" height="260"></canvas>
+
+		<section>
+
+			<span class="brand">Links</span>
+
+		</section>
+
+		<nav id="navbar">
+
+			<ul>
+				<a href="#stats"><li>Statistics</li></a>
+				<a href="#urls"><li>URLs</li></a>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<section>
+
+		<section id="stats">
+
+			<h1>Statistics</h1>
+
+			<div>
+				<h2>{ URLS_SHORTENED } URLs shortened.</h2>
+				<h2>{ TOTAL_USES } users redirected.</h2>
+				<h2>{ CHARACTERS } url characters saved.</h2>
+				<h2>{ TOTAL_CHAR_SAVED } total characters saved.</h2>
+			</div>
+
+		</section>
+
+		<section id="urls">
+
+			<h1>URLs</h1>
+
+			<div>
+				{ TABLE }
+			</div>
+
+		</section>
+
+	</section>
+
+	<footer>
+
+		&copy; 2017 <a href="https://jakeoid.com/">Jakeoid</a>.
+
+	</footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="header.js"></script>
+<script src="zodiac.min.js"></script>
+<script src="smoothscroll.js"></script>
+
+</html>

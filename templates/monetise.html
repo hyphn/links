@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title -->
+	<title>Links &mdash; Home</title>
+
+	<!-- Stylesheet -->
+	<link href="reset.css" type="text/css" rel="stylesheet" />
+	<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Meta -->
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name='theme-color' content='#1d1d1d' />
+	<meta name="description" content="{{DESCRIPTION}}">
+	<meta name="keywords" content="{{TAGS}}">
+	<meta name="author" content="{{AUTHOR}}">
+
+	<!-- Icon -->
+	<link rel="icon" sizes="512x512" href="icon.png">
+
+	<!-- Javascript -->
+	<script type="text/javascript">var adblock = true;</script>
+	<script type="text/javascript" src="adframe.js"></script>
+</head>
+<body>
+
+	<header>
+		<canvas id="zodiac" width="1354" height="260"></canvas>
+		<section>
+			<span id="brand" class="brand">Skippable in <label id="timer"></label>..</span>
+		</section>
+	</header>
+
+	<div class="ad-item">
+
+	</div>
+
+	<div class="row">
+
+		<div class="ad-item">
+
+		</div>
+
+		<div class="ad-item">
+
+		</div>
+
+	</div>
+
+	<footer>
+
+		© 2017 <a href="https://jakeoid.com/">Jakeoid</a>.
+
+	</footer>
+	
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="header.js"></script>
+<script src="zodiac.min.js"></script>
+<script src="smoothscroll.js"></script>
+
+<script type="text/javascript">
+	var count = 6;
+	var hasitloaded = 2;
+
+	var link = "{ LINK }"
+
+	window.addEventListener("load", countDown, false);
+
+	function countDown(){
+		var timer = document.getElementById("timer");
+		if(count > 0){
+			count--;
+			timer.innerHTML = ""+count+"";
+			setTimeout("countDown()", 1000);
+		} else {
+			document.getElementById("brand").innerHTML = "<a href=\"{ LINK }\"><div class=\"button\">Click here to skip..</div></a>";
+		}
+	}
+
+	if(adblock) {
+		count = 11;
+		alert("Adblocker has been detected, you're circumventing our hosting costs, consider disabling it?")
+	}
+
+</script>
+</html>

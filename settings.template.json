@@ -1,0 +1,37 @@
+{
+
+	"server": {
+		"_comment": "The settings in which the Kyoukai server will run on.",
+
+		"ip": "127.0.0.1",
+		"port": 5000
+	},
+
+	"templates": {
+		"index": "templates/index.html",
+		"monetise": "templates/monetise.html"
+	},
+
+	"database": {
+		"_comment": "What are the details of the database should we connect to?",
+
+		"name": "example",
+		"redirect_table": "table"
+	},
+
+	"monetise": {
+		"_comment": "Should we attempt to monetise the user we serve the content to?",
+
+		"enabled": true 
+	},
+
+	"meta": {
+		"_comment": "The meta tags for the static web pages that you serve (For SEO).",
+
+		"siteurl": "https://example.com",
+		"name": "Shortener Example",
+		"description": "This site sends you to other sites with nice short urls.",
+		"author": "Jakeoid"
+	}
+
+}
